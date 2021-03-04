@@ -46,10 +46,17 @@ footer {
   font-size: 28px;
   font-weight: bold;
 }
+
 .raleway-sm {
   font-size: 17px;
 }
-
+.raleway-sm-b {
+  font-size: 17px;
+  font-weight: bold;
+}
+.raleway-xs {
+  font-size: 15px;
+}
 /* margin*/
 .m-1 {
   margin: 1rem 0 0 0;
@@ -65,6 +72,9 @@ footer {
 }
 .m-5 {
   margin: 3rem 0 0 0;
+}
+.m-6 {
+  margin: 6rem 0 0 0;
 }
 
 /* padding */
@@ -88,7 +98,7 @@ footer {
 .btn {
   width: 219px;
   padding: 15px 0;
-  border-radius: 20px;
+  border-radius: 100px;
   background: var(--btn-primary);
   color: #fff;
   border: none;
@@ -100,6 +110,7 @@ footer {
   cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
+  /* font styling */
   .raleway-lg-b {
     font-size: 40px;
     font-weight: bold;
@@ -111,14 +122,16 @@ footer {
   .raleway-sm {
     font-size: 25px;
   }
-  .raleway-xs {
-    font-size: 14px;
-  }
   .opensans-sm-b {
     font-weight: bold;
     font-size: 11px;
   }
   .opensans-xs {
     font-size: 9px;
+  }
+
+  /* buttons */
+  .btn {
+    width: 300px;
   }
 }

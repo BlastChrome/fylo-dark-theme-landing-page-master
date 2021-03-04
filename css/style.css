@@ -55,6 +55,19 @@ header .container {
   align-items: center;
 }
 
+/* section b */
+
+.section-b .flex {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 90px, auto;
+}
+/* section-b */
+.section-b .section-b-body-text {
+  max-width: 300px;
+}
+
 /* media query for header */
 @media screen and (min-width: 375px) {
   /* header */
@@ -100,5 +113,11 @@ header .container {
   }
   .section-a #sectiion-a-body-text {
     max-width: 600px;
+  }
+
+  /* section-b */
+  .section-b .grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
   }
 }
