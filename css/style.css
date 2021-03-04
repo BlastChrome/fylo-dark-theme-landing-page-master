@@ -1,6 +1,4 @@
 /* main style sheet */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 
 :root {
   --dark-100: #1c2230;
@@ -10,12 +8,16 @@
   --btn-primary: linear-gradient(90deg, #4ecad5 0%, #3fadce 100%);
   --btn-focus: #8cdae4;
 }
-
 /*resets*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: #fff;
 }
 
 .attribution {
@@ -25,8 +27,78 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-@media screen and (max-width: 768px) {
+body {
+  background-color: var(--dark-100);
 }
-@media screen and (max-width: 1024px) {
+
+/* header */
+header .nav-link {
+  display: none;
+}
+header .dt-logo {
+  display: none;
+}
+header .container {
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* section a */
+.section-a img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+}
+.section-a .flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* media query for header */
+@media screen and (min-width: 375px) {
+  /* header */
+  header .container {
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .nav-link {
+    display: block;
+  }
+  header .nav-link {
+    margin: 0 10px 0 0;
+  }
+  header .nav-link:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* header */
+  header .dt-logo {
+    display: block;
+    transform: scale(0.7);
+  }
+  header .mb-logo {
+    display: none;
+  }
+  header .nav-link {
+    margin: 0 40px 0 0;
+  }
+  /* section-a */
+  .section-a #section-a-title-text {
+    max-width: 600px;
+  }
+  .section-a #sectiion-a-body-text {
+    max-width: 430px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* section-a */
+  .section-a #section-a-title-text {
+    max-width: 800px;
+  }
+  .section-a #sectiion-a-body-text {
+    max-width: 600px;
+  }
 }
