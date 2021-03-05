@@ -57,7 +57,6 @@ header .container {
 }
 
 /* section b */
-
 .section-b .flex {
   align-items: center;
   justify-content: center;
@@ -68,8 +67,22 @@ header .container {
 .section-b .section-b-body-text {
   max-width: 300px;
 }
-
 /* section-c */
+.section-c .grid {
+  justify-items: center;
+}
+.section-c img {
+  width: 100%;
+  height: auto;
+  max-width: 615px;
+}
+.section-c p {
+  width: 95%;
+}
+.section-c .flex {
+  flex-direction: column;
+  align-items: center;
+}
 
 /* media query for header */
 @media screen and (min-width: 375px) {
@@ -110,6 +123,12 @@ header .container {
   }
 
   /* section-c */
+  .section-c .section-c-title {
+    font-size: 28px;
+  }
+  .section-c p {
+    width: 75%;
+  }
 }
 @media screen and (min-width: 1024px) {
   /* section-a */
@@ -125,5 +144,20 @@ header .container {
     grid-template-columns: 1fr 1fr;
     max-width: 1000px;
   }
+  .section-c .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+  }
+  .section-c .flex {
+    flex-direction: column;
+    justify-content: center;
+  }
   /* section-c  */
+  .section-c .section-c-title {
+    font-size: 40px;
+  }
+  .section-c p {
+    width: 100%;
+  }
 }
