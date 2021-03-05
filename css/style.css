@@ -7,6 +7,7 @@
   --card-300: #21293c;
   --btn-primary: linear-gradient(90deg, #4ecad5 0%, #3fadce 100%);
   --btn-focus: #8cdae4;
+  --txt-color: rgb(226, 226, 226);
 }
 /*resets*/
 * {
@@ -17,7 +18,7 @@
   text-decoration: none;
 }
 a {
-  color: #fff;
+  color: var(--txt-color);
 }
 
 .attribution {
@@ -68,6 +69,8 @@ header .container {
   max-width: 300px;
 }
 
+/* section-c */
+
 /* media query for header */
 @media screen and (min-width: 375px) {
   /* header */
@@ -105,6 +108,8 @@ header .container {
   .section-a #sectiion-a-body-text {
     max-width: 430px;
   }
+
+  /* section-c */
 }
 @media screen and (min-width: 1024px) {
   /* section-a */
@@ -120,4 +125,5 @@ header .container {
     grid-template-columns: 1fr 1fr;
     max-width: 1000px;
   }
+  /* section-c  */
 }

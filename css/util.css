@@ -29,12 +29,12 @@ footer {
 .raleway-xs {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   line-height: 150%;
-  color: #fff;
+  color: var(--txt-color);
 }
 .opensans-sm-b,
 .opensans-xs {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: var(--txt-color);
 }
 .text-align-center {
   text-align: center;
