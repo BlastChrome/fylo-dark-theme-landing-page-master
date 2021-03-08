@@ -23,8 +23,14 @@ footer {
 }
 
 .card {
-  padding: 26px 12px;
-  border: 3px solid var(--card-300);
+  /* padding: 30px 15px; */
+  padding: 2rem 1rem;
+  border: 1px solid var(--card-300);
+  border-radius: 5px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 15px 4px 0px #1a212b,
+    7px 10px 0px #1a212b; */
+  background-color: var(--card-500);
+  box-shadow: 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
 /* font styling */
@@ -66,6 +72,9 @@ footer {
 .raleway-xs-2 {
   font-size: 12px;
 }
+.raleway-xs-2-b {
+  font-weight: bold;
+}
 .opensans-sm-b {
   font-weight: bold;
   font-size: 10px;
@@ -92,7 +101,9 @@ footer {
 .m-6 {
   margin: 6rem 0 0 0;
 }
-
+.m-7 {
+  margin: 9rem 0 0 0;
+}
 /* padding */
 .p-1 {
   padding: 1rem 0 0 0;
@@ -124,6 +135,11 @@ footer {
   outline: none;
   background: var(--btn-focus);
   cursor: pointer;
+}
+
+.frm {
+  border: none;
+  outline: none;
 }
 @media screen and (min-width: 1024px) {
   /* font styling */
