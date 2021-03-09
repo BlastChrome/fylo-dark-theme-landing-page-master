@@ -120,6 +120,9 @@ footer {
 .p-5 {
   padding: 3rem 0 0 0;
 }
+.p-7 {
+  padding: 17rem 0 0 0;
+}
 
 /* buttons */
 .btn {
@@ -141,6 +144,13 @@ footer {
   border: none;
   outline: none;
 }
+
+@media screen and (min-width: 768px) {
+  .p-7 {
+    padding: 8rem 0 0 0;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   /* font styling */
   .raleway-lg-b {
